@@ -1,7 +1,26 @@
 HTTP Enumeration
 ----------------------------------------------
+
+# search wordlist
+locate common.txt
+locate directory-list
+
+# Dirb
+dirb <target> 
+
 # Gobuster
-gobuster -u <targetip> -w /usr/share/seclists/Discovery/Web_Content/common.txt -s '200,204,301,302,307,403,500' -e
+gobuster dir -u http://10.10.214.110/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -s '200,204,301,302,307,403,500' -e
+
+# Dirbuster -GUI tool
+
+# Dirsearch 
+
+python3 dirsearch.py -u http://10.10.214.110/
+
+# Ffuf
+
+ffuf -w /path/to/wordlist -u https://target/FUZZ
+
 ----------------------------------------------
 # nikto
 nıkto -h <targetip>
