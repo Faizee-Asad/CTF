@@ -4,7 +4,7 @@ NMAP
 nmap -sn 10.0.0.0/24	
 
 # Fast Scan
-nmap -T5 -p- -vv -sV <target> oA output
+nmap -T5 -p- -vv -sV <targetip> -oA output
 
 # scan the 1024 most common ports, run OS detection, run default nmap scripts
 nmap -A -oA nmap <targetip>	
