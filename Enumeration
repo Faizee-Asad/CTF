@@ -6,6 +6,10 @@ nmap -sn 10.0.0.0/24
 # Fast Scan
 nmap -T5 -p- -vv -sV <targetip> -oA output
 
+# Deep Scan
+nmap -T5 -p21,22,80 -A 10.10.50.84 -oA nmap_deep
+
+
 # scan the 1024 most common ports, run OS detection, run default nmap scripts
 nmap -A -oA nmap <targetip>	
 
