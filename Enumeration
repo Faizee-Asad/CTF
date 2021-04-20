@@ -29,6 +29,9 @@ nmap -p- -v <targetip>
 
 SMB
 
+enum4linux -a <targetip>
+
+
 Port 139 and 445- SMB/Samba shares
 Samba is a service that enables the user to share files with other machines
 works the same as a command line FTP client, may browse files without even having credentials
