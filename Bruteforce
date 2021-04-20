@@ -1,6 +1,6 @@
 Hydra
 
-hydya -l username -P /usr/share/wordlists/rockyou.txt ssh://targetip
+hydya -l username -P /usr/share/wordlists/rockyou.txt ssh://<targetip>
 hydra -l root -P /usr/share/wordlısts/rockyou.txt <targetip> ssh
 hydra -L userlist.txt -P /usr/share/wordlısts/rockyou.txt <targetip> -s 22 ssh -V
 
