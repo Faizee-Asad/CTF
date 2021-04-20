@@ -9,16 +9,15 @@ locate directory-list
 dirb <target> 
 
 # Gobuster
-gobuster dir -u http://10.10.214.110/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -s '200,204,301,302,307,403,500' -e
+gobuster dir -u http://target/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -s '200,204,301,302,307,403,500' -e
+gobuster dir -u http://target/ -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
 
 # Dirbuster -GUI tool
 
 # Dirsearch 
-
-python3 dirsearch.py -u http://10.10.214.110/
+python3 dirsearch.py -u http://target/
 
 # Ffuf
-
 ffuf -w /path/to/wordlist -u https://target/FUZZ
 
 ----------------------------------------------
