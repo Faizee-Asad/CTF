@@ -4,6 +4,13 @@ hydya -l username -P /usr/share/wordlists/rockyou.txt ssh://<targetip>
 hydra -l root -P /usr/share/wordlısts/rockyou.txt <targetip> ssh
 hydra -L userlist.txt -P /usr/share/wordlısts/rockyou.txt <targetip> -s 22 ssh -V
 
+ssh hash and crack
+/usr/share/john/ssh2john.py kay_id_rsa > forkay.txt
+john forkay.txt --wordlist=/usr/share/wordlists/rockyou.txt 
+
+
+
+
 Cewl
 cewl http://<targetip>/ -m 6 -w cewl.txt
 wc -l cewl.txt
